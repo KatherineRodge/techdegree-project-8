@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  body
+    h1 Books
+
+    p
+      a(class="button" href="/books/new") Create New Book
+
+    form(action="/books/search")
+      include searchForm
+
+    table
+      thead
+        tr
+          th title
+          th author
+          th genre
+          th year
+      tbody
+        each book in books
+          book
+          tr
+            td
+              a(href="/books/" + book.id) #{book.title}
+            td #{book.author}
+            td #{book.genre}
+            td #{book.year}
+
+    p
+      a(class="button" href="books/new") <
+      a(class="button" href="books/new") >

@@ -24,9 +24,14 @@ a.button, input[type=submit] {
   cursor: pointer;
 }
 
+
 form a.button, input[type=submit] {
   margin-left: 140px;
   transition: 0.4s;
+}
+
+input.search {
+  margin-left: 30px;
 }
 
 input[type=submit] {
@@ -90,6 +95,10 @@ input {
 input[type=text] {
   margin-left: 7px;
   width: 300px;
+}
+
+input.searchBox {
+  margin-left: 0px; 
 }
 
 .error {
