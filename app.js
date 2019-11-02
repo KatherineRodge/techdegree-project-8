@@ -21,7 +21,7 @@ app.use('/', routes);
 app.use('/books', books);
 
 // catch 404
-app.use( (req, res, next) => {
+app.use((req, res, next) => {
   next(createError(404));
 });
 
@@ -29,7 +29,6 @@ app.use( (req, res, next) => {
 app.use( (err, req, res, next) => {
   res.render('page-not-found');
 });
-
 
 app.listen(port, 'localhost', function(){
   console.log('Example app listening on port 3000.');

@@ -98,9 +98,17 @@ input[type=text] {
 }
 
 input.searchBox {
-  margin-left: 0px; 
+  margin-left: 0px;
 }
 
 .error {
   color: rgb(236, 15, 15);
+}
+
+input.searchButton {
+  margin-left: 5px;
+}
+
+#returnButton {
+  margin-left: 5px; 
 }
